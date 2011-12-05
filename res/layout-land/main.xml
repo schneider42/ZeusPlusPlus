@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/groupTable" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip" android:stretchColumns="0">
+
+		<TableRow>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<SeekBar android:id="@+id/seekR" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:max="255"
+					android:thumb="@drawable/seekr" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip" android:thumbOffset="3dip">
+				</SeekBar>
+				<SeekBar android:id="@+id/seekG" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:max="255"
+					android:thumb="@drawable/seekg" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip" android:thumbOffset="3dip">
+				</SeekBar>
+				<SeekBar android:id="@+id/seekB" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:max="255"
+					android:thumb="@drawable/seekb" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip" android:thumbOffset="3dip">
+				</SeekBar>
+				<de.ccc.muc.zeusplus.ui.ColorBlockView
+					android:id="@+id/colorBlock" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+				<de.ccc.muc.zeusplus.ui.MultiColorBlockView
+					android:id="@+id/predefinedColors1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+
+
+			<ScrollView android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<de.ccc.muc.zeusplus.ui.LampsView
+					android:id="@+id/lamps" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical" />
+			</ScrollView>
+		
+		</TableRow>
+	
+	</TableLayout>
+
+</LinearLayout>
